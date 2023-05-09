@@ -1,0 +1,92 @@
+#readmore {
+  color: blue;
+  margin-left: 1em;
+  text-decoration: dashed;
+  cursor: pointer;
+}
+
+.job-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.job-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 1em;
+  max-width: 500px;
+  border: 1px solid #d3d3d3;
+  border-radius: 3em;
+}
+
+.job-content {
+  width: 100%;
+  height: 100%;
+}
+
+.job-heading-content h4 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.job-content-location {
+  display: flex;
+  margin-top: 0.4em;
+  justify-content: flex-start;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.job-content-location .job-loc {
+  padding-right: 2rem;
+  margin-right: 1em;
+  border-right: 2px solid var(--primary);
+}
+
+.job-description {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-top: 2rem;
+  color: #797979;
+}
+
+.job-type {
+  color: #0c5bc6;
+}
+
+.apply-link {
+  margin-top: 2em;
+}
+
+.job-apply-link {
+  font-weight: 700;
+  color: #242331;
+  border: 1px solid #242331;
+  cursor: pointer;
+  padding: 1em 2em;
+  border-radius: 2em;
+  transition: all 0.2s ease-in-out;
+}
+
+.job-apply-link:hover {
+  color: #fff;
+  background-color: #242331;
+}
+
+/* @media only screen and(max-width:500px) {
+  .job-list-item,
+  .job-list {
+    width: 100%;
+  }
+} */

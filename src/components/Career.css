@@ -1,0 +1,52 @@
+/* @media only screen and (min-width: 1200px) { */
+.career-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3em;
+}
+
+.career-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+  gap: 3em;
+  max-width: 606px;
+  max-height: 295px;
+}
+
+.career-content h1 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 110%;
+  text-align: center;
+  color: #242331;
+}
+
+.career-content p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4em;
+
+  text-align: center;
+
+  color: #797979;
+}
+
+.btn-career {
+  background: #0c5bc6;
+  border-radius: 39px;
+  border: none;
+  padding: 1em;
+  width: 70%;
+  color: #fff;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}

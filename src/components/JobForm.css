@@ -1,0 +1,95 @@
+.form-heading {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 110%;
+  text-align: center;
+  color: #242331;
+}
+
+.form-content {
+  background: #f9f9f9;
+  margin: 1em auto;
+  padding: 1em;
+  max-width: 900px;
+  box-shadow: 0px 17px 44px rgba(179, 179, 179, 0.25);
+  border-radius: 20px;
+}
+
+form {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.form-group label {
+  font-family: "Open Sans" sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #242331;
+}
+
+.form-control {
+  background: #f9f9f9;
+  border: 1px solid #d3d3d3;
+  font-family: "Nunito";
+  font-style: normal;
+  border-radius: 6px;
+  padding: 0.5em 0em 0.5em 0.3em;
+  font-weight: 400;
+  font-size: 18px;
+  width: 100%;
+  min-height: 2em;
+  line-height: 1.2em;
+  display: flex;
+  align-items: center;
+  text-transform: lowercase;
+  color: #797979;
+  outline: none;
+}
+
+.message-form {
+  margin-top: 1em;
+}
+
+.btn-submit {
+  color: #fff;
+  background-color: #242331;
+  padding: 1em 2em;
+  font-size: 1em;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  transform: scale(0.98);
+}
+
+.form-btn {
+  margin: inherit;
+}
+
+.form-control:focus {
+  border: 2px solid #0c5bc6;
+}
+
+@media only screen and (max-width: 500px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}

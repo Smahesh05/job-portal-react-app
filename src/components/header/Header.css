@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: 1rem auto;
+}
+
+.header h2 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #242331;
+}
+
+.navbar a {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-align: center;
+  background: #0c5bc6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 39px;
+  padding: 5px 10px;
+}
+
+/* @media only screen and (max-width: 500px) {
+} */

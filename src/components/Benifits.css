@@ -1,0 +1,101 @@
+.benifit-wrapper {
+  margin-top: 3rem;
+}
+
+.benifit-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 31px;
+}
+
+.value {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 2.3em;
+  gap: 10px;
+  background: #c6deff;
+  border-radius: 39px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #0c5bc6;
+}
+
+.benifit-heading h4 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 110%;
+  text-align: center;
+  color: #242331;
+  margin-bottom: 3rem;
+}
+
+.benifit-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.benifit-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 10px;
+  width: 340px;
+  height: 300px;
+  background: #ffffff;
+  border: 1px solid #f6f6f6;
+  box-shadow: 1px 15px 23px rgba(229, 229, 229, 0.25);
+  border-radius: 40px;
+}
+
+.benifit-item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.benifit-item-content .avatar {
+  width: 4em;
+  height: 4em;
+}
+
+.benifit-item-content h4 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 110%;
+}
+
+.benifit-item-content p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  color: #797979;
+}
+
+@media only screen and (max-width: 780px) {
+  .benifit-item {
+    width: 100%;
+  }
+}

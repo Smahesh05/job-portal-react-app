@@ -1,12 +1,28 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import "./JobForm.css";
 
 const JobForm = () => {
-  const [countryCode, setCountryCode] = useState("");
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    countryCode: "",
+    email: "",
+    phone: "",
+  });
 
-  const handleCountryCodeChange = (event) => {
-    setCountryCode(event.target.value);
+  const handleChange = (e) => {
+    setFormData((prev) => {
+      return {
+        ...prev,
+        [e.target.name]: e.target.value,
+      };
+    });
+  };
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    console.log(formData);
   };
 
   return (
@@ -16,11 +32,25 @@ const JobForm = () => {
         <form>
           <div className="form-group">
             <label>FirstName *</label>
-            <input className="form-control" type="text" placeholder="John" />
+            <input
+              className="form-control"
+              type="text"
+              name="firstName"
+              value={formData.firstName}
+              onChange={handleChange}
+              placeholder="John"
+            />
           </div>
           <div className="form-group">
             <label>LastName *</label>
-            <input className="form-control" placeholder="Dev" type="text" />
+            <input
+              className="form-control"
+              name="lastName"
+              value={formData.lastName}
+              onChange={handleChange}
+              placeholder="Dev"
+              type="text"
+            />
           </div>
           <div className="form-group">
             <label>Mobile No.*</label>
@@ -30,12 +60,16 @@ const JobForm = () => {
                 style={{ width: "40px" }}
                 className="form-control"
                 placeholder="+91"
-                value={countryCode}
-                onChange={handleCountryCodeChange}
+                name="countryCode"
+                value={formData.countryCode}
+                onChange={handleChange}
               />
               <input
                 className="form-control"
                 type="text"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
                 placeholder="112345678"
               />
             </div>
@@ -45,6 +79,9 @@ const JobForm = () => {
             <input
               className="form-control"
               type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
               placeholder="email@gmail.com"
             />
           </div>
@@ -59,7 +96,9 @@ const JobForm = () => {
         </div>
 
         <div className="form-btn">
-          <button className="btn btn-submit">Send Message</button>
+          <button className="btn btn-submit" onClick={submitHandler}>
+            Send Message
+          </button>
         </div>
       </div>
     </div>
